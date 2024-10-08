@@ -3,10 +3,12 @@ from const import *
 from stringInput import String
 
 class Application:
-    def __init__(self):
+    def __init__(self, language_model):
         pygame.init()
         pygame.display.set_caption('Spam filter')
         self.screen = pygame.display.set_mode(display_size)
+
+        self.language_model = language_model
 
         self.font = pygame.font.Font(None, input_box_height)
         self.start_input_box = pygame.Rect(75, 100, input_box_width, input_box_height)
