@@ -13,16 +13,8 @@ visible_lines_count = 9
 display_size = (800, 600)
 
 title_text = ['Write or copy-paste your email for check', 'for moving down use arrows']
+spam_checker_text = [['Good news! it\'s something interesting for you', 'It\'s spam. Don\'t waste your time for this :)'], 'For the new check process press backspace']
+
+
 title_text_coordinates = [(70, 10), (170, 50)]
-
-word2ind = {}
-ind2word = {}
-
-def load_vocabular():
-    with open('word2ind.json', 'r') as f:
-        word2ind = json.load(f)
-
-    with open('ind2word.json', 'r') as f:
-        ind2word = json.load(f)
-
-    return word2ind, ind2word
+spam_checker_text_coordinates = [[(30, 100), (70, 100)] , (50, 150)] 

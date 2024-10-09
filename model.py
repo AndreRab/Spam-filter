@@ -1,8 +1,6 @@
-import torch.nn as nn 
-import torch
-import os 
-from const import load_vocabular
+import torch.nn as nn # type: ignore
 
+word2ind = {}
 
 class LM(nn.Module):
     def __init__(self, hidden_dim, vocab_size):
@@ -27,18 +25,4 @@ class LM(nn.Module):
         output, (hidden, cell) = self.LSTM(embeddings)
         output = output.mean(dim = 1)
         
-        return self.prediction(self.linear(output))
-    
-
-def load_model():
-    global word2ind, ind2word
-    word2ind, ind2word = load_vocabular()
-    
-    if os.path.exists('full_model.pth'):
-        model = torch.load('full_model.pth')
-        print("Model was loaded")
-    else:
-        print("Model wasn't found")
-        model = LM(128, 100000)  # Use random model if loading fails
-    
-    return model
+        return self.prediction(self.linear(output)) 

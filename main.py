@@ -1,6 +1,7 @@
 from application import Application
-from model import load_model, LM
+from model_manager import ModelManager
+from model import LM
 
-model = load_model()
+model = ModelManager()
 app = Application(model)
 app.start()
