@@ -20,9 +20,9 @@ Feel free to explore the project and see if your emails are classified as spam o
 
 | Section                      | Description                                                         |
 |-------------------------------|---------------------------------------------------------------------|
-| [Running the application](#running-application) | Instructions for running the Pygame application               |
+| [Running the application](#running-the-application) | Instructions for running the Pygame application               |
 | [Training Datasets](#training-datasets)   | Information about the datasets used for training models      |
-| [Jupyter Notebook](#notebook-description)   | A detailed breakdown of the notebook, where it's located, and which models have been used |
+| [Jupyter Notebook](#jupyter-notebook)   | A detailed breakdown of the notebook, where it's located, and which models have been used |
 
 ## Running the application
 1. **Clone the Repository**:
