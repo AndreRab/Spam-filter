@@ -52,7 +52,7 @@ For training datasets, I used the following sources: [Spam Email Classification 
 
 
 ## Jupyter Notebook
-The notebook is located in the **research** folder. There, you can see that I first created a vocabulary, where each word is assigned a unique ID. If a word is not in the vocabulary, it is assigned an unknown token.
+The [notebook](https://github.com/AndreRab/Spam-filter/blob/main/research/Research.ipynb) is located in the **research** folder. There, you can see that I first created a vocabulary, where each word is assigned a unique ID. If a word is not in the vocabulary, it is assigned an unknown token.
 
 Next, I defined three different architectures using the following blocks: vanilla RNN, GRU, and LSTM. All of them achieved good results, but the best-performing model was the one using GRU blocks. You can also find a plot showing its learning process.
 
