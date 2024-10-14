@@ -25,6 +25,8 @@ Feel free to explore the project and see if your emails are classified as spam o
 | [Jupyter Notebook](#jupyter-notebook)   | A detailed breakdown of the notebook, where it's located, and which models have been used |
 
 ## Running the application
+0. **Install python interpreter 
+   How to make it, you can find [here](https://www.python.org/downloads/)
 1. **Clone the Repository**:
    Open a terminal and clone the repository:
    ```bash
@@ -35,18 +37,15 @@ Feel free to explore the project and see if your emails are classified as spam o
     ```bash
     cd Spam-filter
     ```
-
 3. **Install the necessary libraries**:
    Install the necessary libraries for properly application working:
    ```bash
    pip install -r requirements.txt
    ```
-
 4. **Start the application**
    ```bash
    python scripts/main.py
    ```
-
 ## Training Datasets
 For training datasets, I used the following sources: [Spam Email Classification Dataset](https://www.kaggle.com/datasets/purusinghvi/email-spam-classification-dataset). In this dataset, there are only two columns: text and labels. Therefore, I didn't need to perform any preprocessing before training my models.
 
