@@ -25,7 +25,7 @@ Feel free to explore the project and see if your emails are classified as spam o
 | [Jupyter Notebook](#jupyter-notebook)   | A detailed breakdown of the notebook, where it's located, and which models have been used |
 
 ## Running the application
-0. **Install python interpreter 
+0. **Install python interpreter** 
    How to make it, you can find [here](https://www.python.org/downloads/)
 1. **Clone the Repository**:
    Open a terminal and clone the repository:
